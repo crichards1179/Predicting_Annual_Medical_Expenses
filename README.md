@@ -67,7 +67,7 @@ Typical EDA activities were performed including:
 
 Data used for the model building was divided with 70% used for training and the remaining 30% for testing.  The models were then fitted using the training data set and predictions made on the test data set.  Accuracy using the R^2 scoring metric was recorded.  
 
-Each of the models was fitted using data containing different features.  One set of data consisted of the complete feature set, another set contained only "age" and "smoker", while the third set consisted of "age", "smoker", and "bmi".
+Each of the models was fitted using data containing different features.  One set of data consisted of the complete feature set, another set contained only "age" and "smoker", while the third set added "bmi" to "age" and "smoker".
 
 In addition, feature importance based on each model was visualized.  
 
@@ -76,13 +76,24 @@ Detailed steps can be found in the following notebooks in this repository:
 * practicum_linear_regression_age_and_smoker_2.ipynb
 * practicum_linear_regression_age_bmi_smoker_2.ipynb
 
-## Model: XGBoost
+## Models: XGBoost
 The extreme gradient boosting (XGBoost) algorithm was implemented for the second round of model building.  The XGBoost algorithm is capable of both classification and regression modeling.  This project implemented it as a regressor similar to the earlier linear and polynomial regression experiments.  Unlike the earlier models, XGBoost uses decision trees to arrive at predictions.  The trees are "boosted" in that the algorithm seeks to improve on earlier trees by learning from their mistakes.  
   
-Two XGBoost models were implemented.  The first used a set of parameters of low values as a "baseline".  The second model's hyperparameters were tuned for optimizing the accuracy scoring metric.  
+Two XGBoost models were implemented.  The first used a set of parameters of low values as a "baseline".  The second model's hyperparameters were tuned for optimizing the accuracy scoring metric.  In addition, the final boosted tree of each model was visualized.
 
-Data for this model followed the earlier 70/30 split of testing and training sets.  
+Data for this model followed the earlier 70/30 split of testing and training sets.  The complete set of features was used for both models.
+  
+Detailed steps can be found in the practicum_xgboost_models_1_and_2.ipynb notebook in this repository.  
+## Models:  GridsearchCV (XGBoost)
+The third set of model building experiments utilized the GridsearchCV method.  GridsearchCV allows the user to specify a set, or "grid", of hyperparameters to use for model building.  It then iterates through each combination of the hyperparameters as it fits each model.  The models are scored using, in this project, the R^2 accuracy metric and the best performing set of parameters is recorded.  Furthermore, it performs cross-validation of the data as it divides it into testing and training sets.  
+Two experiments using the GridsearchCV method were performed with the XGBoost algorithm as the estimator.  The goal was to use GridsearchCV to automatically find the best parameters to use for the prediciton model.  
+One of the experiments was fitted using the 70% training set while the other used the entire set of data.  The complete set of features was used for both models.  
+The resulting best parameters and best estimator from each of the experiments was recorded.   The best estimator objects were then used to perform predictions and the accuracies were recorded.  
+Feature importance and the final boosted trees were again visualized. 
 
-Detailed steps can be found in the  notebooks in this repository: 
+## Results
+The results for each of the models was recorded and analyzed.  
+
+  
 example of image link:
 <img src="images/weight_cat.PNG" raw=true/>
