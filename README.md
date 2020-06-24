@@ -5,11 +5,10 @@
 #### Practicum 1, Summer 2020
 #### Regis University
 
-## Overview
-### Project goal
+## Project goal
 The goal of this project was to create various models and assess their usefulness in predicting the annual dollar amount of health care spending.  
 
-## Resources/libraries
+## Resources
 * Anaconda 3
 * Python 3
 * Jupyter Notebooks  
