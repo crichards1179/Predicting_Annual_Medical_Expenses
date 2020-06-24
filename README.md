@@ -1,7 +1,5 @@
 
 # Predicting Annual Medical Expenses
-
-
 #### Chris Richards
 #### Practicum 1, Summer 2020
 #### Regis University
@@ -93,11 +91,17 @@ One of the experiments was fitted using the 70% training set while the other use
 
 The resulting best parameters and best estimator from each of the experiments was recorded.   The best estimator objects were then used to perform predictions and the accuracies were recorded.  
 
-Feature importance and the final boosted trees were again visualized. 
+Feature importance and the final boosted trees were again visualized.  
+  
+Detailed steps can be found in the following notebooks in this repository:
+* practicum_gridserchcv_xgboost_models_1.ipynb
+* practicum_gridserchcv_xgboost_models_full_data.ipynb
 
 ## Results
 The results for each of the models was recorded and analyzed.  
-
-  
-
 <img src="images/model_accuracy_results.jpg" raw=true/>
+  
+The top-ranked model, XGBoost using the training data set and improved hyperparameters, logged a 99.99% accuracy score.   While this should be cause for celebration, it is very likely that this model is overfitted to the data and would perform poorly when predicting on new data.  The process of manually adjusting the hyperparameters to increase the accuracy score likely inadvertently caused the overfitting.  In particular, the depth of the tree at 13 levels is very deep, which is known to cause overfitting.  
+  
+The second highest model was found using GridsearchCV and trained on the full data set.  It scored a respectable 86.00%.  This model was fitted using 10-fold cross-validation which should minimize overfitting.  This method found the best estimator needed only a three level boosted tree in order to arrive at it's predictions.  
+  
