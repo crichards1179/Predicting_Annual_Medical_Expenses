@@ -7,7 +7,7 @@
 
 ## Overview
 ### Project goal
-The goal of this project was to create various models and assess their usefullness in predicting the annual dollar amount of health care spending.  
+The goal of this project was to create various models and assess their usefulness in predicting the annual dollar amount of health care spending.  
 
 ## Resources/libraries
 * Anaconda 3
@@ -51,7 +51,7 @@ Typical EDA activities were performed including:
  Detailed steps can be found in the practicum_eda.ipynb notebook in this repository.
  
  ## Feature Engineering
- Feature engineering was fairly light.  An extraneous index column was removed from the intitial data set.  Categorical features were encoded using different techniques.  
+ Feature engineering was light.  An extraneous index column was removed from the initial data set.  Categorical features were encoded using different techniques.  
  Features that were poorly correlated with the target variable, "charges", were removed and saved for later model building.  
  An additional feature, "weight category", based on the BMI categories was added as part of the EDA process.  The categories were used for analysis of the relationship between BMI categories and several other features, including "charges.  Visualizations of the analysis can be found in the EDA notebook.
  
@@ -86,7 +86,7 @@ Detailed steps can be found in the practicum_xgboost_models_1_and_2.ipynb notebo
 ## Models:  GridsearchCV (XGBoost)
 The third set of model building experiments utilized the GridsearchCV method.  GridsearchCV allows the user to specify a set, or "grid", of hyperparameters to use for model building.  It then iterates through each combination of the hyperparameters as it fits each model.  The models are scored using, in this project, the R<sup>2</sup> accuracy metric and the best performing set of parameters is recorded.  Furthermore, it performs cross-validation of the data as it divides it into testing and training sets.  
   
-Two experiments using the GridsearchCV method were performed with the XGBoost algorithm as the estimator.  The goal was to use GridsearchCV to automatically find the best parameters to use for the prediciton model.  
+Two experiments using the GridsearchCV method were performed with the XGBoost algorithm as the estimator.  The goal was to use GridsearchCV to automatically find the best parameters to use for the prediction model.  
 
 One of the experiments was fitted using the 70% training set while the other used the entire set of data.  The complete set of features was used for both models.  
 
@@ -104,7 +104,7 @@ The results for each of the models was recorded and analyzed.
   
 The top-ranked model, XGBoost using the training data set and improved hyperparameters, logged a 99.99% accuracy score.   While this should be cause for celebration, it is very likely that this model is overfitted to the data and would perform poorly when predicting on new data.  The process of manually adjusting the hyperparameters to increase the accuracy score likely inadvertently caused the overfitting.  In particular, the depth of the tree at 13 levels is very deep, which is known to cause overfitting.  
   
-The second highest model was found using GridsearchCV and trained on the full data set.  It scored a respectable 86.00%.  This model was fitted using 10-fold cross-validation which should minimize overfitting.  This method found the best estimator needed only a three level boosted tree in order to arrive at it's predictions.  
+The second highest model was found using GridsearchCV and trained on the full data set.  It scored a respectable 86.00%.  This model was fitted using 10-fold cross-validation which should minimize overfitting.  This method found the best estimator needed only a three-level boosted tree in order to arrive at its predictions.  
   
 Future enhancements to this project could include experiments with additional predictive models such as Generalized Linear Models (GLM) or random forests.  Improved accuracy of the linear regression models is likely with additional preprocessing of the data to better conform to the assumptions of linear modeling.  
   
