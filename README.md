@@ -86,14 +86,18 @@ Data for this model followed the earlier 70/30 split of testing and training set
 Detailed steps can be found in the practicum_xgboost_models_1_and_2.ipynb notebook in this repository.  
 ## Models:  GridsearchCV (XGBoost)
 The third set of model building experiments utilized the GridsearchCV method.  GridsearchCV allows the user to specify a set, or "grid", of hyperparameters to use for model building.  It then iterates through each combination of the hyperparameters as it fits each model.  The models are scored using, in this project, the R^2 accuracy metric and the best performing set of parameters is recorded.  Furthermore, it performs cross-validation of the data as it divides it into testing and training sets.  
+  
 Two experiments using the GridsearchCV method were performed with the XGBoost algorithm as the estimator.  The goal was to use GridsearchCV to automatically find the best parameters to use for the prediciton model.  
+
 One of the experiments was fitted using the 70% training set while the other used the entire set of data.  The complete set of features was used for both models.  
+
 The resulting best parameters and best estimator from each of the experiments was recorded.   The best estimator objects were then used to perform predictions and the accuracies were recorded.  
+
 Feature importance and the final boosted trees were again visualized. 
 
 ## Results
 The results for each of the models was recorded and analyzed.  
 
   
-example of image link:
-<img src="images/weight_cat.PNG" raw=true/>
+
+<img src="images/model_accuracy_results.jpg" raw=true/>
