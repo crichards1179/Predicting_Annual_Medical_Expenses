@@ -1,3 +1,4 @@
+<img src="images/Machine-Learning2.jpg" raw=true/>
 
 # Predicting Annual Medical Expenses
 #### Chris Richards
