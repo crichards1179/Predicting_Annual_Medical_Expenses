@@ -65,7 +65,7 @@ Typical EDA activities were performed including:
 * Polynomial Regression model using SVR (scikit-learn)
 * Linear regression model (statsmodels)
 
-Data used for the model building was divided with 70% used for training and the remaining 30% for testing.  The models were then fitted using the training data set and predictions made on the test data set.  Accuracy using the R^2 scoring metric was recorded.  
+Data used for the model building was divided with 70% used for training and the remaining 30% for testing.  The models were then fitted using the training data set and predictions made on the test data set.  Accuracy using the R<sup>2</sup> scoring metric was recorded.  
 
 Each of the models was fitted using data containing different features.  One set of data consisted of the complete feature set, another set contained only "age" and "smoker", while the third set added "bmi" to "age" and "smoker".
 
@@ -85,7 +85,7 @@ Data for this model followed the earlier 70/30 split of testing and training set
   
 Detailed steps can be found in the practicum_xgboost_models_1_and_2.ipynb notebook in this repository.  
 ## Models:  GridsearchCV (XGBoost)
-The third set of model building experiments utilized the GridsearchCV method.  GridsearchCV allows the user to specify a set, or "grid", of hyperparameters to use for model building.  It then iterates through each combination of the hyperparameters as it fits each model.  The models are scored using, in this project, the R^2 accuracy metric and the best performing set of parameters is recorded.  Furthermore, it performs cross-validation of the data as it divides it into testing and training sets.  
+The third set of model building experiments utilized the GridsearchCV method.  GridsearchCV allows the user to specify a set, or "grid", of hyperparameters to use for model building.  It then iterates through each combination of the hyperparameters as it fits each model.  The models are scored using, in this project, the R<sup>2</sup> accuracy metric and the best performing set of parameters is recorded.  Furthermore, it performs cross-validation of the data as it divides it into testing and training sets.  
   
 Two experiments using the GridsearchCV method were performed with the XGBoost algorithm as the estimator.  The goal was to use GridsearchCV to automatically find the best parameters to use for the prediciton model.  
 
