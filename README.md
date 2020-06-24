@@ -40,6 +40,25 @@ The data itself consists of 1,337 rows and the following features:
 * region: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest.
 * charges: Individual medical costs billed by health insurance
 
+## Exploratory Data Analysis (EDA)
+Typical EDA activities were performed including:
+* Quantitative stats
+* Checking for null values and mitigating
+* Pairs plot for correlations
+* Checking for duplicates and mitigating
+* Detecting outliers using boxplots and scatterplots
+* Distributions using histograms
+  
+ Detailed steps can be found in the practicum_eda.ipynb notebook in this repository.
+ 
+ ## Feature Engineering
+ Feature engineering was fairly light.  An extraneous index column was removed from the intitial data set.  Categorical features were encoded using different techniques.  
+ Features that were poorly correlated with the target variable, "charges", were removed and saved for later model building.  
+ 
+ Detailed steps can be found in the practicum_feature_engineering_2.ipynb notebook in this repository.  
+   
+ ## Models: Linear Regression and Support Vector Regression (SVR)
+ 
 
 
 example of image link:
