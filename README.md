@@ -51,7 +51,9 @@ Typical EDA activities were performed including:
  
  ## Feature Engineering
  Feature engineering was light.  An extraneous index column was removed from the initial data set.  Categorical features were encoded using different techniques.  
+ 
  Features that were poorly correlated with the target variable, "charges", were removed and saved for later model building.  
+ 
  An additional feature, "weight category", based on the BMI categories was added as part of the EDA process.  The categories were used for analysis of the relationship between BMI categories and several other features, including "charges.  Visualizations of the analysis can be found in the EDA notebook.
  
  Detailed feature engineering steps can be found in the practicum_feature_engineering_2.ipynb notebook in this repository.  
