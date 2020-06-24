@@ -54,11 +54,19 @@ Typical EDA activities were performed including:
  ## Feature Engineering
  Feature engineering was fairly light.  An extraneous index column was removed from the intitial data set.  Categorical features were encoded using different techniques.  
  Features that were poorly correlated with the target variable, "charges", were removed and saved for later model building.  
+ An additional feature, "weight category", based on the BMI categories was added as part of the EDA process.  The categories were used for analysis of the relationship between BMI categories and several other features, including "charges.  Visualizations of the analysis can be found in the EDA notebook.
  
- Detailed steps can be found in the practicum_feature_engineering_2.ipynb notebook in this repository.  
+ Detailed feature engineering steps can be found in the practicum_feature_engineering_2.ipynb notebook in this repository.  
    
  ## Models: Linear Regression and Support Vector Regression (SVR)
- 
+ Implemented several models:
+Linear regression (scikit-learn)
+Polynomial Regression using SVR (scikit-learn)
+Linear regression (statsmodels)
+practicum_linear_regression_all_features_2.ipynb
+practicum_linear_regression_age_and_smoker_2.ipynb
+practicum_linear_regression_age_bmi_smoker_2.ipynb
+
 
 
 example of image link:
