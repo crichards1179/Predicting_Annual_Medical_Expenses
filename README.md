@@ -106,4 +106,6 @@ The top-ranked model, XGBoost using the training data set and improved hyperpara
   
 The second highest model was found using GridsearchCV and trained on the full data set.  It scored a respectable 86.00%.  This model was fitted using 10-fold cross-validation which should minimize overfitting.  This method found the best estimator needed only a three level boosted tree in order to arrive at it's predictions.  
   
-<img src="images/aimap2.jpg" raw=true/>
+Future enhancements to this project could include experiments with additional predictive models such as Generalized Linear Models (GLM) or random forests.  Improved accuracy of the linear regression models is likely with additional preprocessing of the data to better conform to the assumptions of linear modeling.  
+  
+<img src="images/Machine-learning3.jpg" raw=true/>
