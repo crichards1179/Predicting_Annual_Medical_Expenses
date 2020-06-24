@@ -108,4 +108,4 @@ The second highest model was found using GridsearchCV and trained on the full da
   
 Future enhancements to this project could include experiments with additional predictive models such as Generalized Linear Models (GLM) or random forests.  Improved accuracy of the linear regression models is likely with additional preprocessing of the data to better conform to the assumptions of linear modeling.  
   
-<img src="images/Machine-learning3.jpg" raw=true/>
+<img src="images/Machine-Learning3.jpg" raw=true/>
