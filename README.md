@@ -54,7 +54,7 @@ Typical EDA activities were performed including:
  
  Features that were poorly correlated with the target variable, "charges", were removed and saved for later model building.  
  
- An additional feature, "weight category", based on the BMI categories was added as part of the EDA process.  The categories were used for analysis of the relationship between BMI categories and several other features, including "charges.  Visualizations of the analysis can be found in the EDA notebook.
+ An additional feature, "weight category", based on the BMI categories was added as part of the EDA process.  The categories were used for analysis of the relationship between BMI categories and several other features, including "charges".  Visualizations of the analysis can be found in the EDA notebook.
  
  Detailed feature engineering steps can be found in the practicum_feature_engineering_2.ipynb notebook in this repository.  
    
@@ -81,7 +81,7 @@ The extreme gradient boosting (XGBoost) algorithm was implemented for the second
   
 Two XGBoost models were implemented.  The first used a set of parameters of low values as a "baseline".  The second model's hyperparameters were tuned for optimizing the accuracy scoring metric.  In addition, the final boosted tree of each model was visualized.
 
-Data for this model followed the earlier 70/30 split of testing and training sets.  The complete set of features was used for both models.
+Data for these models followed the earlier 70/30 split of testing and training sets.  The complete set of features was used for both models.
   
 Detailed steps can be found in the practicum_xgboost_models_1_and_2.ipynb notebook in this repository.  
 ## Models:  GridsearchCV (XGBoost)
