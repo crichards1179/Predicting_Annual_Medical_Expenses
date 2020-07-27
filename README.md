@@ -89,7 +89,7 @@ The third set of model building experiments utilized the GridsearchCV method.  G
   
 Two experiments using the GridsearchCV method were performed with the XGBoost algorithm as the estimator.  The goal was to use GridsearchCV to automatically find the best parameters to use for the prediction model.  
 
-One of the experiments was fitted using the 70% training set while the other used the entire set of data.  The complete set of features was used for both models.  
+One of the experiments was fit using the 70% training set while the other used the entire set of data.  The complete set of features was used for both models.  
 
 The resulting best parameters and best estimator from each of the experiments was recorded.   The best estimator objects were then used to perform predictions and the accuracies were recorded.  
 
@@ -105,7 +105,7 @@ The results for each of the models was recorded and analyzed.
   
 The top-ranked model, XGBoost using the training data set and improved hyperparameters, logged a 99.99% accuracy score.   While this should be cause for celebration, it is very likely that this model is overfitted to the data and would perform poorly when predicting on new data.  The process of manually adjusting the hyperparameters to increase the accuracy score likely inadvertently caused the overfitting.  In particular, the depth of the tree at 13 levels is very deep, which is known to cause overfitting.  
   
-The second highest model was found using GridsearchCV and trained on the full data set.  It scored a respectable 86.00%.  This model was fitted using 10-fold cross-validation which should minimize overfitting.  This method found the best estimator needed only a three-level boosted tree in order to arrive at its predictions.  
+The second highest model was found using GridsearchCV and trained on the full data set.  It scored a respectable 86.00%.  This model was fit using 10-fold cross-validation which should minimize overfitting.  This method found the best estimator needed only a three-level boosted tree in order to arrive at its predictions.  
   
 Future enhancements to this project could include experiments with additional predictive models such as Generalized Linear Models (GLM) or random forests.  Improved accuracy of the linear regression models is likely with additional preprocessing of the data to better conform to the assumptions of linear modeling.  
   
