@@ -67,7 +67,7 @@ Typical EDA activities were performed including:
 
 Data used for the model building was divided with 70% used for training and the remaining 30% for testing.  The models were then fitted using the training data set and predictions made on the test data set.  Accuracy using the R<sup>2</sup> scoring metric was recorded.  
 
-Each of the models was fitted using data containing different features.  One set of data consisted of the complete feature set, another set contained only "age" and "smoker", while the third set added "bmi" to "age" and "smoker".
+Each of the models was fit using data containing different features.  One set of data consisted of the complete feature set, another set contained only "age" and "smoker", while the third set added "bmi" to "age" and "smoker".
 
 In addition, feature importance based on each model was visualized.  
 
